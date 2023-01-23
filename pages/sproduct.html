@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icono/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icono/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/icono/favicon-16x16.png">
+    <link rel="manifest" href="../images/icono/site.webmanifest">
+    <script src="https://kit.fontawesome.com/37868b9b67.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    
+<!-- Header -->
+
+<section id="header">
+    <a href="../index.html"><img src="../images/logo_peque_resized.png" class="logo" alt="logo_nav"></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="active" href="../pages/productos.html">Productos</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+            <li><a id="lg-bag" href="../pages/carrito.html"><i class="fa-solid fa-bag-shopping"></i><p id="cart_amount" class="cart_amount">0</p></a></li>
+            <li><a id="light-dark" href="#"><i class="fa-solid fa-lightbulb"></i></a></li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            <li><a id="login_icon" href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+            <li><a id="logout" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="../pages/carrito.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+</section>
+
+<!-- Log in -->
+
+<section id="login_sec">
+    <div class="container_login">
+        <h2>
+            Inicie sesión
+        </h2>
+        <form id="login">
+            <label>
+                <input type="text" placeholder="Usuario" id="input_user">
+            </label>
+            <label>
+                <input type="text" placeholder="Contraseña" id="input_pass">
+            </label>
+            <label>
+                <input type="submit" value="Ingresar">
+            </label>
+            <p id="logint">
+                El usuario o la contraseña son incorrectas.
+            </p>
+        </form>            
+    </div>
+</section>
+
+<!-- Producto -->
+
+    <section id="detalles_prod" class="section_p1">
+        <div class="single_prod_image">
+            <!-- Intentar pasar esodesde DOM :( -->
+            <img src="../images/canon85mm.jpg" width="100%" id="imagen_principal" alt="canon85mm">
+            <div class="img_small_group">
+                <div class="col_img_small">
+                    <img src="../images/canon85mm.jpg" width="100%" id="img_small" alt="canon85mm">
+                </div>
+                <div class="col_img_small">
+                    <img src="../images/canon35mm.jpg" width="100%" id="img_small" alt="canon35mm">
+                </div>
+                <div class="col_img_small">
+                    <img src="../images/canon50mm.jpg" width="100%" id="img_small" alt="canon50mm">
+                </div>
+            </div>
+        </div>
+        <div class="single_prod_details">
+            <h6>Lente / Canon</h6>
+            <h4>Objetivo Canon EOS-RF 85mm F2.0</h4>
+            <h2>$2400000</h2>
+            <select>
+                <option>Seleccione la Longitud Focal</option>
+                <option>RF 85 mm</option>
+                <option>RF 50 mm</option>
+                <option>RF 35 mm</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Agregar al Carrito</button>
+            <h4>Detalles del Producto</h4>
+            <span>Objetivo 85mm F2.0 para cámaras Canon de la gama Full Frame.</span>
+        </div>
+    </section>
+
+<!-- Productos Destacados-->
+    <h2 id="product1" >Productos Destacados</h2>
+    <section id="product1" class="section_p1">
+        <div class="prod_container contenedor">
+        </div>
+    </section>
+
+<!-- Newsletter -->
+
+    <section id="newsletter" class="section_p1">
+        <div>
+            <h4>Inscríbete a nuestro Newsletter</h4>
+            <p>Recibe e-mails con actualizaciones de <span>ofertas especiales</span> y nuevos productos.</p>
+        </div>
+        <div class="form" id="form_news">
+            <form>
+                <input type="text" placeholder="Tú correo electrónico" id="input_email_news">
+                <button id="form_news" class="normal">Regístrate</button>
+            </form>
+        </div>
+    </section>
+
+<!-- Footer -->
+
+    <footer class="section_p1">
+        <div class="col">
+            <a href="../index.html"><img src="../images/logo_recortado_resized.png" class="logo" alt="logo_nav"></a>
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Calle 55 #78-73</p>
+            <p><strong>Teléfono:</strong> +57 316 366 7303 / +57 601 257 2429</p>
+            <p><strong>Horas:</strong> 10:00 AM - 6:00 PM, Lunes - Sábado</p>
+            <div class="follow">
+                <h4>Sigue Nuestras Redes</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/Johan.Rodriguez67/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/Indievidual5"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/indievidual5/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Mi cuenta</h4>
+            <a href="#">Mi cuenta</a>
+            <a href="#">Ver Carrito</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Seguimiento de Orden</a>
+            <a href="#">Ayuda</a>
+        </div>
+        <div class="col">
+            <h4>Métodos de Pago</h4>
+            <img src="../images/payment.png" alt="metodos_pago">
+        </div>
+        <div class="copyright">
+            <p>©2023. Indievidual - Johan Rodriguez eCommerce</p>
+        </div>
+    </footer>
+
+    <script src="../index.js"></script>
+</body>
+</html>
